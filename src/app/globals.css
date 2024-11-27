@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 :root {
   --background: #ffffff;
@@ -14,10 +16,15 @@
   }
 }
 
+*{
+padding: 0;
+margin:0;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 @layer utilities {
@@ -25,3 +32,42 @@ body {
     text-wrap: balance;
   }
 }
+.banner-text{
+  text-shadow:2px 2px white;
+}
+
+.swiperstyle1 {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+    background-color: #ffffff !important;
+  }
+
+
+}
+
+.swiper-pagination-bullet {
+  height: 11px!important; width: 11px!important;
+  opacity: 1!important;
+  border: 1px solid #E04E1C;
+  background: rgb(255, 255, 255) !important;
+}
+.swiper-pagination-bullet-active {
+  background: #E04E1C !important;
+}
+
+.animate-x{
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
