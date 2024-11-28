@@ -88,7 +88,7 @@ const Header = () => {
     <header
       className={`fixed top-0 z-50 md:h-20 h-24 w-full  transition-transform duration-300  ${show}`}
     >
-      <div className="flex justify-center md:justify-between flex-wrap lg:px-28 md:px-16 py-2 bg-orange-800 text-white">
+      <div className="flex justify-center md:justify-between flex-wrap lg:px-28 md:px-16 max-md:hidden py-2 bg-orange-800 text-white">
         <div className="flex gap-4"><p className="flex"><IoMailOpen className="text-xl" /> &nbsp; info@website.com
         </p> <p className="flex"><MdOutlineWifiCalling3 className="text-xl"/> &nbsp; +9123443343444  </p></div>
 
@@ -96,9 +96,9 @@ const Header = () => {
         className="text-xl" /> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.   </p></div>
       </div>
       <div className="flex w-full bg-white h-full items-end justify-center gap-3 max-sm:pt-2 pb-2 ">
-      <Image src={shape3} alt="logo" className="max-h-28 w-28 -mt-4 mb-3 max-md:hidden"/>
+      <Image src={shape3} alt="logo" className="max-h-28 max-w-28 -mt-4 mb-3 w-[15vw]"/>
       <Image src={logo} alt="logo" className="max-h-28 max-w-80 w-[35vw]"/>
-      <Image src={shape4} alt="logo" className="max-h-28 w-28 -mt-4 mb-3 max-md:hidden"/>
+      <Image src={shape4} alt="logo" className="max-h-28 max-w-28 -mt-4 mb-3 w-[15vw]"/>
       </div>
       <div
        
@@ -111,8 +111,8 @@ const Header = () => {
         />
       </div>
       {/* Mobile Section */}
-      <div className="flex h-14 w-full items-center justify-between gap-3 px-5 bg-orange-900 text-white md:hidden">
-        <div className="flex-center relative cursor-pointer rounded-full text-3xl hover:bg-blue-500/5 md:hidden">
+      <div className="flex h-12 w-full items-center justify-between gap-3 px-5 bg-orange-900 text-white md:hidden">
+        <div className="flex-center relative cursor-pointer rounded-full text-3xl md:hidden">
           {isMobileMenuOpen ? (
             <VscChromeClose onClick={handleMobileMenu} />
           ) : (
@@ -124,7 +124,7 @@ const Header = () => {
       </div>
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute left-0 top-48 w-full md:hidden">
+        <div className="absolute left-0 top-36 w-full md:hidden">
           <MenuMobile
             navItemsArray={navItems}
             setIsMobileMenuOpen={setIsMobileMenuOpen}
@@ -138,26 +138,6 @@ const Header = () => {
 
 export default Header;
 
-function RoundedButton() {
-  return (
-    <div className="flex items-center">
-      <div className="z-10 h-16 w-16 rounded-full bg-black">
-        <Image src={logo} alt="logo" height={100} width={100} />
-      </div>
-      <div className="-ml-2 rounded-e-full bg-black px-4 py-2 font-semibold text-white">
-        Suzuki Swift VDI
-      </div>
-    </div>
-  );
-}
 
-function CartButton() {
-  return (
-    <button className="flex items-center gap-2">
-      <FiShoppingCart />
-      <p>Cart</p>
-    </button>
-  );
-}
 
 
