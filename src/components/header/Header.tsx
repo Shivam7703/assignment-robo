@@ -52,7 +52,7 @@ const Header = () => {
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
-      if (window.scrollY > 30) {
+      if (window.scrollY > 60) {
         if (window.scrollY > lastScrollY && !isMobileMenuOpen) {
           setShow("-translate-y-[121px]");
         } else {
