@@ -52,9 +52,9 @@ const Header = () => {
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 30) {
         if (window.scrollY > lastScrollY && !isMobileMenuOpen) {
-          setShow("-translate-y-[119px]");
+          setShow("-translate-y-[121px]");
         } else {
           setShow("shadow-sm");
         }

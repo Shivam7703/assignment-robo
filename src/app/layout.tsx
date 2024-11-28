@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cursive.variable}`}>
+      <body className={`${cursive.variable} bg-white`}>
         <Header />
         {children}
         {/* <Footer /> */}

@@ -61,12 +61,12 @@ export default function HomeBanner() {
 
       {/* Navigation buttons */}
       <div
-        className={`${uniqueId}-next swiper-button-next !right-2 !p-2.5 !text-lg !text-orange-600 md:!right-3 md:!top-[44%] md:!h-16 md:!w-16 max-md:!hidden`}
+        className={`${uniqueId}-next swiper-button-next !right-2 !p-2.5 !text-lg !text-orange-600 md:!right-3 md:!top-[64%] md:!h-16 md:!w-16 max-md:!hidden`}
       >
         <GrNext />
       </div>
       <div
-        className={`${uniqueId}-prev swiper-button-prev !left-2  !p-2.5  !text-orange-600 md:!left-3 md:!top-[44%] md:!h-16 md:!w-16 max-md:!hidden`}
+        className={`${uniqueId}-prev swiper-button-prev !left-2  !p-2.5  !text-orange-600 md:!left-3 md:!top-[64%] md:!h-16 md:!w-16 max-md:!hidden`}
       >
         <GrPrevious />
       </div>
@@ -82,7 +82,7 @@ function HomeBannerCard({
   btntext,
 }: any) {
   return (
-    <div className="relative w-full overflow-hidden bg-[#0f1014] text-white md:h-[90vh]">
+    <div className="relative w-full overflow-hidden bg-[#0f1014] text-white md:h-[95vh]">
       {/* Full-size image */}
       <Image
         src={img} // Use the dynamic image passed in
