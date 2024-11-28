@@ -5,8 +5,8 @@ export const header = {
   navItems: [
     {
       id: 1,
-      label: "Audio",
-      href: "/audio",
+      label: "MEN",
+      href: "/",
       subNav: [
         // {
         //   id: 21,
@@ -17,58 +17,35 @@ export const header = {
     },
     {
       id: 2,
-      label: "Vision",
-      href: "/vision",
+      label: "WOMEN",
+      href: "/",
       subNav: [],
     },
     {
       id: 6,
-      label: "OEM",
-      href: "/oem",
+      label: "WEDDING",
+      href: "/",
       subNav: [],
     },
     {
       id: 3,
-      label: "Interior",
-      href: "/interior",
+      label: "BOY",
+      href: "/",
       subNav: [],
     },
     {
       id: 4,
-      label: "Aesthetics",
-      href: "/aesthetics",
+      label: "BLOGS",
+      href: "/",
       subNav: [],
     },
     {
       id: 5,
-      label: "Necessities",
+      label: "CONTACT US",
       href: "/necessities",
       subNav: [],
     },
-    {
-      id: 6,
-      label: "Car Care",
-      href: "/car-care",
-      subNav: [],
-    },
-    {
-      id: 7,
-      label: "Online Audio",
-      href: "/online-audio",
-      subNav: [],
-    },
-    {
-      id: 8,
-      label: "Offline Stores",
-      href: "/offline-stores",
-      subNav: [],
-    },
-    {
-      id: 9,
-      label: "In-Office Service",
-      href: "/in-office-service",
-      subNav: [],
-    },
+    
   ],
 };
 export const footer = {

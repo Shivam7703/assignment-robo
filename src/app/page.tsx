@@ -5,6 +5,7 @@ import VibeSlide from "@/components/banner-slides/VibeSlide";
 export default function Home() {
   return (
    <>
+   <div className="sm:h-32 h-48  w-full"></div>
   <HomeBanner/>
   <VibeSlide/>
   <MostLoved/>

@@ -1,7 +1,7 @@
 import { Dancing_Script } from "next/font/google"; // Ensure you import the font properly
 import type { Metadata } from "next";
 import "./globals.css";
-// import Header from "@/components/header/Header";
+import Header from "@/components/header/Header";
 // import Footer from "@/components/footer/Footer";
 
 const cursive = Dancing_Script({
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cursive.variable}`}>
-        {/* <Header /> */}
+        <Header />
         {children}
         {/* <Footer /> */}
       </body>

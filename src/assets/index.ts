@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.webp";
+import logo from "@/assets/logo.png";
 // home
 import banner1 from "@/assets/home/banner/pc-1.avif";
 import banner2 from "@/assets/home/banner/pc-2.avif";
@@ -19,6 +19,8 @@ import boy1 from "@/assets/home/mostloved/boy1.avif";
 import boy2 from "@/assets/home/mostloved/boy2.avif";
 import shape1 from "@/assets/home/shapes/circle.png";
 import shape2 from "@/assets/home/shapes/line.png";
+import shape3 from "@/assets/home/shapes/shape3.png";
+import shape4 from "@/assets/home/shapes/shape4.png";
 
 
 
@@ -30,4 +32,4 @@ import shape2 from "@/assets/home/shapes/line.png";
 
 
 
-export {logo, banner1, banner2, bannermob,bannermob2, vibe1,vibe2,vibe3,horse,man1,man2,man3,wom1,wom2,wom3,boy1,shape1,shape2,boy2};
+export {logo, banner1, banner2, bannermob,bannermob2, vibe1,vibe2,vibe3,horse,man1,man2,man3,wom1,wom2,wom3,boy1,shape1,shape2, shape3,shape4,boy2};
