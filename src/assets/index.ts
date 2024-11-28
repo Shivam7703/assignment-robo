@@ -15,6 +15,8 @@ import wom2 from "@/assets/home/mostloved/wom2.jpg";
 import wom3 from "@/assets/home/mostloved/wom3.jpg";
 import boy1 from "@/assets/home/mostloved/boy1.avif";
 import boy2 from "@/assets/home/mostloved/boy2.avif";
+import shape1 from "@/assets/home/shapes/circle.png";
+import shape2 from "@/assets/home/shapes/line.png";
 
 
 
@@ -24,4 +26,6 @@ import boy2 from "@/assets/home/mostloved/boy2.avif";
 
 
 
-export {logo, banner1, banner2, bannermob, vibe1,vibe2,vibe3,horse,man1,man2,man3,wom1,wom2,wom3,boy1,boy2};
+
+
+export {logo, banner1, banner2, bannermob, vibe1,vibe2,vibe3,horse,man1,man2,man3,wom1,wom2,wom3,boy1,shape1,shape2,boy2};

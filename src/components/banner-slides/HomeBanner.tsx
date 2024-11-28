@@ -81,7 +81,7 @@ function HomeBannerCard({
   btntext,
 }: any) {
   return (
-    <div className="relative w-full overflow-hidden bg-[#0f1014] text-white md:h-[80vh] h-[60vh]">
+    <div className="relative w-full overflow-hidden bg-[#0f1014] text-white md:h-[80vh] h-[70vh]">
       {/* Full-size image */}
       <Image
         src={img} // Use the dynamic image passed in
@@ -89,7 +89,7 @@ function HomeBannerCard({
         alt="banner image"
         layout="fill"
       />
-      <div className="absolute z-10 h-full w-full bg-gradient-to-b from-transparent via-transparent to-[#202020c1]"></div>
+      <div className="absolute z-10 h-full w-full bg-gradient-to-b from-transparent via-[#0000004e] to-[#202020c1]"></div>
 
       <div className="relative z-10 grid grid-cols-2 max-md:pb-10 md:grid-cols-3 h-full">
         <motion.div
@@ -98,12 +98,12 @@ function HomeBannerCard({
           animate="animate"
           exit="exit"
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="col-span-2 flex h-full w-full flex-col max-w-4xl  justify-center gap-5 p-8 max-md:items-center md:px-28"
+          className="col-span-2 flex h-full w-full flex-col max-w-4xl  justify-center gap-7 p-8 max-md:items-center md:px-28"
         >
-          <h2 className="inline-block  text-4xl font-bold md:text-6xl max-md:text-center">
-            {title} <span className="text-orange-500 banner-text ">{title2}</span>
-          </h2>
-          <p className="md:text-xl text-lg max-md:text-center">{subtitle}</p>
+          <h1 className="inline-block  text-4xl font-semibold md:text-6xl max-md:text-center">
+            {title} <span className="text-orange-500 banner-text">{title2}</span>
+          </h1>
+          <p className="md:text-lg text-md max-md:text-center">{subtitle}</p>
           <Link href={"/"} className="w-min">
             <div className="flex items-center gap-4 text-nowrap px-6 py-2 bg-orange-600 text-white duration-300 hover:bg-black">
               <p className="text-md font-bold">{btntext}</p><MdArrowRightAlt  className="animate-x text-4xl"/>

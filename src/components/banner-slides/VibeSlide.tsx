@@ -15,7 +15,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 // Adjust import path for images based on your project structure
-import {vibe1,vibe2,vibe3, horse} from '@/assets';
+import {vibe1,vibe2,vibe3, horse, shape1,shape2} from '@/assets';
 
 
 export default function VibeSlide () {
@@ -48,9 +48,25 @@ const data=[
 
   return (
     <section className=" md:p-24 py-14 px-7 bg-white relative">
+        <Image 
+              src={shape1} 
+              alt={"icon"} 
+              width={500} 
+              height={500} 
+              className="absolute -top-32 -left-14 max-w-md sm:opacity-70 opacity-50  w-[70vw] "
+            />
         <div className='absolute bg-[#F8ECD7] w-full h-3/5 bottom-0 left-0'></div>
-        <h2 className='md:text-5xl font-medium text-4xl text-center md:mb-16 mb-4 text-black'>What&lsquo;s Your Vibe?
-        </h2>
+        <h2 className='md:text-6xl font-medium  text-3xl text-center mt-14 relative z-20 text-black'>What&lsquo;s Your Vibe?
+          </h2>
+          <Image 
+              src={shape2} 
+              alt={"icon"} 
+              width={500} 
+              height={500} 
+              className="mx-auto max-w-72 w-full md:mb-12 mb-3"
+            />
+        
+        
       <Swiper
         effect="coverflow"
         grabCursor={false}
@@ -79,10 +95,10 @@ const data=[
           clickable: true 
         }}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        className="mySwiper "
       >
         {data?.map((vibes) => (
-          <SwiperSlide key={vibes.id} className='py-9'>
+          <SwiperSlide key={vibes.id} className=''>
             <div className='relative w-full h-full'>
             <Image 
               src={vibes.img} 
