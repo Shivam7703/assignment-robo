@@ -45,7 +45,7 @@ export default function HomeBanner() {
     <section  className="swiperstyle1">
       <Swiper {...swiperOptions} className="mySwiper ">
         {sliderContent.map((item, index) => (
-          <SwiperSlide key={index} className="overflow-hidden rounded-xl">
+          <SwiperSlide key={index} className="overflow-hidden ">
             <HomeBannerCard
               img={item?.img}
               title={item?.title}
