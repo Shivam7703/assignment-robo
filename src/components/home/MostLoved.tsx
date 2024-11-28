@@ -145,8 +145,8 @@ export default function MostLoved() {
   }]
 
   return (
-    <section className="md:px-24 p-7 bg-[#F8ECD7] relative">
-      <h2 className="md:text-6xl font-medium text-3xl text-center text-black">
+    <section className=" md:p-24 py-14 px-7 bg-white relative">
+      <h2 className="md:text-6xl font-medium text-4xl text-center text-black">
         Most Loved Collection
       </h2>
       <Image
@@ -176,7 +176,7 @@ export default function MostLoved() {
         .map((card :any)=>(
          <div className='md:w-[32%] max-w-72  sm:w-[48%] w-full group space-y-2' key={card.id}>
           <div className='md:h-96 h-72 relative overflow-hidden'>
-            <div className='absolute text-black  text-2xl w-max top-3 right-3 z-20'><FaRegHeart />
+            <div className='absolute text-red-500  text-2xl w-max top-3 right-3 z-20'><FaRegHeart />
             </div>
             {!card.Available && <div className='absolute text-white font-medium text-center text-lg py-2 px-8 bottom-0 right-0 w-full bg-[#ff08007c] font-mono z-20'> Sold Out
               </div>}

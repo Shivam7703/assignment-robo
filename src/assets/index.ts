@@ -8,7 +8,7 @@ import bannermob2 from "@/assets/home/banner/mob-2.png";
 import vibe1 from "@/assets/home/vibe/vibe1.avif";
 import vibe2 from "@/assets/home/vibe/vibe2.avif";
 import vibe3 from "@/assets/home/vibe/vibe3.avif";
-import horse from "@/assets/home/horse.gif";
+import offer from "@/assets/home/banner/offer.png";
 import man1 from "@/assets/home/mostloved/men1.jpg";
 import man2 from "@/assets/home/mostloved/men2.jpg";
 import man3 from "@/assets/home/mostloved/men3.jpg";
@@ -32,4 +32,4 @@ import shape4 from "@/assets/home/shapes/shape4.png";
 
 
 
-export {logo, banner1, banner2, bannermob,bannermob2, vibe1,vibe2,vibe3,horse,man1,man2,man3,wom1,wom2,wom3,boy1,shape1,shape2, shape3,shape4,boy2};
+export {logo, banner1, banner2, bannermob,bannermob2, vibe1,vibe2,vibe3,offer,man1,man2,man3,wom1,wom2,wom3,boy1,shape1,shape2, shape3,shape4,boy2};

@@ -1,8 +1,9 @@
-import HomeBanner from "@/components/banner-slides/HomeBanner";
-import MostLoved from "@/components/banner-slides/MostLoved";
-import VibeSlide from "@/components/banner-slides/VibeSlide";
+import HomeBanner from "@/components/home/HomeBanner";
+import MostLoved from "@/components/home/MostLoved";
+import VibeSlide from "@/components/home/VibeSlide";
 import { logo } from "@/assets";
 import Image from "next/image";
+import TopCollection from "@/components/home/TopCollection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
   <HomeBanner/>
   <VibeSlide/>
   <MostLoved/>
+  <TopCollection/>
    </>
   );
 }
