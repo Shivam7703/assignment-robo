@@ -196,6 +196,7 @@ export default function MostLoved() {
          </div>
         ))}
       </div>
+      <div className='px-8 w-max mx-auto mt-10 py-3 md:text-xl text-sm font-bold bg-orange-600 cursor-pointer text-white  hover:bg-orange-800 duration-300'>View All</div> 
 
     </section>
   );
