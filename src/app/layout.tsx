@@ -1,9 +1,16 @@
+import { Dancing_Script } from "next/font/google"; // Ensure you import the font properly
 import type { Metadata } from "next";
 import "./globals.css";
 // import Header from "@/components/header/Header";
 // import Footer from "@/components/footer/Footer";
 
-
+const cursive = Dancing_Script({
+  weight: ["400"], // Adjust weights if needed
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--cursive", // Ensure this matches your CSS variable naming convention
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Assignment",
@@ -17,11 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {/* <Header/> */}
+      <body className={`${cursive.variable}`}>
+        {/* <Header /> */}
         {children}
-        {/* <Footer/> */}
+        {/* <Footer /> */}
       </body>
     </html>
   );
 }
+``

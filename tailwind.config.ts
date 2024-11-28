@@ -14,11 +14,6 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      fontFamily: {
-        'lobster': ['var(--font-lobster)', ...fontFamily.sans],
-        'noto-serif': ['var(--font-noto-serif)', ...fontFamily.serif],
-        'mulish': ['var(--font-mulish)', ...fontFamily.sans],
-      },
     },
   },
   plugins: [],

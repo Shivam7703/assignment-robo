@@ -11,8 +11,8 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { banner1, banner2} from "@/assets";
-import { sliderText } from "@/utils/motion";
+import { banner1, banner2, bannermob, bannermob2} from "@/assets";
+import { rotate, sliderText } from "@/utils/motion";
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
 import { MdArrowRightAlt } from "react-icons/md";
@@ -28,7 +28,7 @@ export default function HomeBanner() {
       clickable: true,
     },
     autoplay: {
-      delay: 4500,
+      delay: 5500,
       disableOnInteraction: false,
     },
     loop: true,
@@ -48,6 +48,7 @@ export default function HomeBanner() {
           <SwiperSlide key={index} className="overflow-hidden ">
             <HomeBannerCard
               img={item?.img}
+              img2={item?.img2}
               title={item?.title}
               title2={item?.title2}
               subtitle={item?.subtitle}
@@ -60,12 +61,12 @@ export default function HomeBanner() {
 
       {/* Navigation buttons */}
       <div
-        className={`${uniqueId}-next swiper-button-next !right-2 !top-[70%] !h-12 !w-12 rounded-full duration-300 hover:!bg-black !bg-zinc-100 !bg-opacity-30 !p-2.5 !text-xs !text-orange-600 md:!right-3 md:!top-1/2 md:!h-12 md:!w-12 max-md:!hidden`}
+        className={`${uniqueId}-next swiper-button-next !right-2 !p-2.5 !text-lg !text-orange-600 md:!right-3 md:!top-[44%] md:!h-16 md:!w-16 max-md:!hidden`}
       >
         <GrNext />
       </div>
       <div
-        className={`${uniqueId}-prev swiper-button-prev !left-2 !top-[70%] !h-12 !w-12 rounded-full duration-300 hover:!bg-black  !bg-zinc-100 !bg-opacity-30 !p-2.5 !text-xs !text-orange-600 md:!left-3 md:!top-1/2 md:!h-12 md:!w-12 max-md:!hidden`}
+        className={`${uniqueId}-prev swiper-button-prev !left-2  !p-2.5  !text-orange-600 md:!left-3 md:!top-[44%] md:!h-16 md:!w-16 max-md:!hidden`}
       >
         <GrPrevious />
       </div>
@@ -74,31 +75,31 @@ export default function HomeBanner() {
 }
 
 function HomeBannerCard({
-  img,
+  img, img2,
   title,
   title2,
   subtitle,
   btntext,
 }: any) {
   return (
-    <div className="relative w-full overflow-hidden bg-[#0f1014] text-white md:h-[80vh] h-[70vh]">
+    <div className="relative w-full overflow-hidden bg-[#0f1014] text-white md:h-[90vh]">
       {/* Full-size image */}
       <Image
         src={img} // Use the dynamic image passed in
-        className="absolute z-0 h-full w-full object-cover object-center"
+        className="absolute z-0 h-full w-full blur-[2px] object-cover object-center"
         alt="banner image"
         layout="fill"
       />
       <div className="absolute z-10 h-full w-full bg-gradient-to-b from-transparent via-[#0000004e] to-[#202020c1]"></div>
 
-      <div className="relative z-10 grid grid-cols-2 max-md:pb-10 md:grid-cols-3 h-full">
+      <div className="relative z-10 grid grid-cols-2 max-md:pb-10 md:grid-cols-3 h-full  gap-y-10   lg:px-28 sm:px-12 p-8">
         <motion.div
           variants={sliderText}
           initial="initial"
           animate="animate"
           exit="exit"
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="col-span-2 flex h-full w-full flex-col max-w-4xl  justify-center gap-7 p-8 max-md:items-center md:px-28"
+          className="col-span-2 flex h-full w-full flex-col max-w-3xl  justify-center gap-7 md:px-11 max-md:items-center"
         >
           <h1 className="inline-block  text-4xl font-semibold md:text-6xl max-md:text-center">
             {title} <span className="text-orange-500 banner-text">{title2}</span>
@@ -110,7 +111,24 @@ function HomeBannerCard({
             </div>
           </Link>
         </motion.div>
+        <motion.div
+          variants={rotate}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="md:col-span-1 col-span-2 flex h-full w-full flex-col max-w-4xl items-center justify-center md:px-11 pb-11"
+        >
+          <Image
+        src={img2} // Use the dynamic image passed in
+        className="sm:w-[500px] object-cover w-[50vw] max-h-[500px]"
+        alt="banner image"
+      /> 
+        </motion.div>
       </div>
+
+
+    
     </div>
   );
 }
@@ -119,6 +137,7 @@ const sliderContent = [
   {
     id: 1,
     img: banner1,
+    img2: bannermob,
     title: "Celebrate in Style!",
     title2:"Trending Now",
     subtitle:
@@ -129,6 +148,8 @@ const sliderContent = [
   {
     id: 2, // Fix duplicate id issue by using unique ids
     img: banner2,
+    img2: bannermob2,
+
     title: "Trendy Clothes, Just buy!",
     title2:"Trending Now",
     subtitle:
@@ -139,6 +160,8 @@ const sliderContent = [
   {
     id: 3,
     img: banner1,
+    img2: bannermob,
+
     title: "Celebrate in Style!",
     title2:"Trending Now",
     subtitle:

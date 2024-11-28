@@ -106,7 +106,13 @@ export const staggerContainer = (
 };
 
 export const sliderText: Variants = {
-  initial: { opacity: 0, x: -40 },
+  initial: { opacity: 0, x: -100 },
   animate: { opacity: 1, x: 0 },
   exit: { opacity: 0, x: 20 },
+};
+
+export const rotate: Variants = {
+  initial: { opacity: 0, x: 440, rotate: 300 },
+  animate: { opacity: 1, x: 0, rotate: 0 },
+  exit: { opacity: 0, x: -20, rotate: 0},
 };
