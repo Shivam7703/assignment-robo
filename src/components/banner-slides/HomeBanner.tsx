@@ -121,7 +121,7 @@ function HomeBannerCard({
         >
           <Image
         src={img2} // Use the dynamic image passed in
-        className="sm:w-[500px] object-cover w-[50vw] max-h-[500px]"
+        className="sm:w-[500px] object-cover w-[50vw] max-h-[500px] max-sm:h-96"
         alt="banner image"
       /> 
         </motion.div>
