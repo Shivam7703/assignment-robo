@@ -2,8 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { man1,  man3, wom1, wom2, wom3, boy2, shape2 } from "@/assets";
-import { FaRegHeart } from 'react-icons/fa';
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay,Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -115,7 +114,7 @@ const swiperOptions = {
        <Swiper {...swiperOptions} className="mySwiper ">
        { Product.map((card :any)=>(
           <SwiperSlide key={card.id} className="overflow-hidden ">
-           <div className='w-full group space-y-2' >
+           <div className='w-full group ' >
           <div className=' h-[400px] relative overflow-hidden'>
            
            <div className='absolute text-white font-medium text-center text-lg py-2 px-2 bottom-0 right-0 w-[50%] bg-[#f09737e3] hover:bg-black cursor-pointer duration-300 font-mono z-20'> Add to Cart
@@ -132,9 +131,11 @@ const swiperOptions = {
               className="absolute top-0 left-0 w-full h-full object-cover group-hover:scale-110 z-10 duration-300"
             />
           </div>
-         
-            <p className='text-zinc-800 '>{card?.itemName}</p>
+         <div className='flex flex-wrap gap-x-2 justify-between items-center mt-3 mb-2'>
+            <p className='text-black font-medium text-lg hover:text-orange-400'>{card?.itemName}</p>
             <h4 className='text-xl font-bold  text-black'>{card?.price}</h4>
+            </div>
+            <p className='text-zinc-800 text-md leading-5 font1 -mt-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda laudantium...</p>
          </div>
           </SwiperSlide>
         ))}

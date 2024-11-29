@@ -21,6 +21,18 @@ import shape1 from "@/assets/home/shapes/circle.png";
 import shape2 from "@/assets/home/shapes/line.png";
 import shape3 from "@/assets/home/shapes/shape3.png";
 import shape4 from "@/assets/home/shapes/shape4.png";
+import boys1 from "@/assets/home/brands/boys1.jpg";
+import boys2 from "@/assets/home/brands/boys2.jpg";
+import boys3 from "@/assets/home/brands/boys3.webp";
+import boys4 from "@/assets/home/brands/boys4.jpg";
+import mens1 from "@/assets/home/brands/mens1.jpg";
+import mens2 from "@/assets/home/brands/mens2.webp";
+import mens3 from "@/assets/home/brands/mens3.jpg";
+import mens4 from "@/assets/home/brands/mens4.jpg";
+import girls1 from "@/assets/home/brands/girls1.png";
+import girls2 from "@/assets/home/brands/girls2.jpg";
+import girls3 from "@/assets/home/brands/girls3.jpg";
+import girls4 from "@/assets/home/brands/girls4.jpg";
 
 
 
@@ -32,4 +44,9 @@ import shape4 from "@/assets/home/shapes/shape4.png";
 
 
 
-export {logo, banner1, banner2, bannermob,bannermob2, vibe1,vibe2,vibe3,offer,man1,man2,man3,wom1,wom2,wom3,boy1,shape1,shape2, shape3,shape4,boy2};
+
+
+
+
+
+export {logo, banner1, banner2, bannermob,bannermob2, vibe1,vibe2,vibe3,offer,man1,man2,man3,wom1,wom2,wom3,boy1,shape1,shape2, shape3,shape4,boy2, boys1, boys2,boys3,boys4,mens1,mens2,mens3,mens4,girls1,girls2,girls3,girls4};

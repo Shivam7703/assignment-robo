@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { man1, man2, man3, wom1, wom2, wom3, boy1, boy2, shape2 } from "@/assets";
 import { FaRegHeart } from 'react-icons/fa';
-import { CgAwards } from 'react-icons/cg';
 
 export default function MostLoved() {
   const [activeFilter, setActiveFilter] = useState(1);

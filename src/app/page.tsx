@@ -4,6 +4,7 @@ import VibeSlide from "@/components/home/VibeSlide";
 import { logo } from "@/assets";
 import Image from "next/image";
 import TopCollection from "@/components/home/TopCollection";
+import LatestBrands from "@/components/home/LatestBrands";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
   <VibeSlide/>
   <MostLoved/>
   <TopCollection/>
+  <LatestBrands/>
    </>
   );
 }

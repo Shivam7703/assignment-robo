@@ -125,7 +125,7 @@ carefully curated holiday gifts</p>
               alt={"horse"} 
               width={500} 
               height={500} 
-              className=" w-full md:h-[460px]  object-cover blur-sm"
+              className=" w-full md:h-[460px] h-[340px]  object-cover blur-sm"
             />
             </div>
     </section>
