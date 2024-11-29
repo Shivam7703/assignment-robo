@@ -19,6 +19,24 @@ import 'swiper/css/autoplay';
 import { EffectCube, Pagination, Autoplay } from 'swiper/modules';
 
 export default function LatestBrands() {
+
+    const SWIPER_CONFIG = {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        modules: [EffectCube, Autoplay]
+      };
+
   const Men = [
     { id: 1, img: mens1 },
     { id: 2, img: mens2 },
@@ -56,21 +74,7 @@ export default function LatestBrands() {
       <div className='flex flex-wrap justify-between gap-y-8 items-center md:px-24 px-7 md:mb-14 mb-9'>
         <div className='sm:w-[49%] w-full max-w-[500px] px-5'>
           <Swiper
-            effect={'cube'}
-            grabCursor={true}
-            cubeEffect={{
-              shadow: true,
-              slideShadows: true,
-              shadowOffset: 20,
-              shadowScale: 0.94,
-            }}
-            pagination={true}
-            loop={true}
-            autoplay={{
-              delay: 3000, // 4 seconds
-              disableOnInteraction: false, // continue autoplay after user interaction
-            }}
-            modules={[EffectCube, Pagination, Autoplay]}
+            {...SWIPER_CONFIG} 
             className="mySwiper"
           >
             {Men.map((card) => (
@@ -103,21 +107,7 @@ export default function LatestBrands() {
 
         <div className='sm:w-[49%] w-full max-w-[550px] px-5'>
           <Swiper
-            effect={'cube'}
-            grabCursor={true}
-            cubeEffect={{
-              shadow: true,
-              slideShadows: true,
-              shadowOffset: 20,
-              shadowScale: 0.94,
-            }}
-            pagination={true}
-            loop={true}
-            autoplay={{
-              delay: 3000, // 4 seconds
-              disableOnInteraction: false, // continue autoplay after user interaction
-            }}
-            modules={[EffectCube, Pagination, Autoplay]}
+            {...SWIPER_CONFIG} 
             className="mySwiper"
           >
             {Boy.map((card) => (
@@ -140,21 +130,7 @@ export default function LatestBrands() {
        <div className='flex flex-wrap justify-between gap-y-8 items-center md:px-24 px-7 '>
         <div className='sm:w-[49%] w-full max-w-[500px] px-5'>
           <Swiper
-            effect={'cube'}
-            grabCursor={true}
-            cubeEffect={{
-              shadow: true,
-              slideShadows: true,
-              shadowOffset: 20,
-              shadowScale: 0.94,
-            }}
-            pagination={true}
-            loop={true}
-            autoplay={{
-              delay: 3000, // 4 seconds
-              disableOnInteraction: false, // continue autoplay after user interaction
-            }}
-            modules={[EffectCube, Pagination, Autoplay]}
+            {...SWIPER_CONFIG} 
             className="mySwiper"
           >
             {Girl.map((card) => (
