@@ -26,7 +26,7 @@ export default function Footer() {
        {footer?.text} 
         </p>
       </div>
-      <div className="max-w-80 w-full bg-orange-800 mx-auto sticky -mt-4 mb-5">  <Image
+      <div className="max-w-80 max-sm:w-[50vw] -mt-3 bg-orange-800 mx-auto sticky sm:-mt-4 mb-5">  <Image
           src={border}
           alt="border"
           className="w-full"
