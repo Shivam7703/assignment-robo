@@ -146,7 +146,7 @@ export default function LatestBrands() {
             ))}
           </Swiper>
         </div>
-        <div className='sm:w-[49%] w-full  space-y-7 text-black'>
+        <div className='sm:w-[49%] w-full  space-y-7 text-black z-10 '>
             <h3 className='font1 md:text-6xl text-3xl font-semibold'>Let's Take A Look Some Bride's Lahanga</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum dolorem deleniti nostrum qui delectus voluptatem repudiandae sed, illum at voluptatum iusto accusamus neque ullam, quas vitae, maiores ad reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero pariatur eligendi consectetur rem provident dolor, qui libero maiores, ut nulla mollitia earum beatae laborum et, temporibus quaerat omnis itaque.</p>
             <div className='px-8 py-3 md:text-xl text-sm font-bold border-black border shadow-md bg-white cursor-pointer text-black hover:text-white hover:bg-black duration-300 w-max'>View Collection</div> 

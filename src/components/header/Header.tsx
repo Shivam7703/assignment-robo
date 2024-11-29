@@ -96,9 +96,9 @@ const Header = () => {
         className="text-xl" /> &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit.   </p></div>
       </div>
       <div className="flex w-full bg-white h-full items-end justify-center gap-3 max-sm:pt-2 pb-2 ">
-      <Image src={shape3} alt="logo" className="max-h-28 max-w-28 -mt-4 mb-3 w-[15vw]"/>
-      <Image src={logo} alt="logo" className="max-h-28 max-w-80 w-[35vw]"/>
       <Image src={shape4} alt="logo" className="max-h-28 max-w-28 -mt-4 mb-3 w-[15vw]"/>
+      <Image src={logo} alt="logo" className="max-h-28 max-w-80 w-[35vw]"/>
+      <Image src={shape3} alt="logo" className="max-h-28 max-w-28 -mt-4 mb-3 w-[15vw]"/>
       </div>
       <div
        

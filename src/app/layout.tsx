@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cursive.variable} ${font1.variable} bg-white`}>
+      <body className={`${cursive.variable} ${font1.variable} bg-white `}>
         <Header />
         {children}
         {/* <Footer /> */}

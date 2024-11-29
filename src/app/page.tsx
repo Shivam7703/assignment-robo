@@ -5,6 +5,7 @@ import { logo } from "@/assets";
 import Image from "next/image";
 import TopCollection from "@/components/home/TopCollection";
 import LatestBrands from "@/components/home/LatestBrands";
+import Testimonial from "@/components/home/Testimonial";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
   <MostLoved/>
   <TopCollection/>
   <LatestBrands/>
+  <Testimonial/>
    </>
   );
 }

@@ -18,6 +18,7 @@ import wom3 from "@/assets/home/mostloved/wom3.jpg";
 import boy1 from "@/assets/home/mostloved/boy1.avif";
 import boy2 from "@/assets/home/mostloved/boy2.avif";
 import shape1 from "@/assets/home/shapes/circle.png";
+import shape5 from "@/assets/home/shapes/circle2.png";
 import shape2 from "@/assets/home/shapes/line.png";
 import shape3 from "@/assets/home/shapes/shape3.png";
 import shape4 from "@/assets/home/shapes/shape4.png";
@@ -49,4 +50,4 @@ import girls4 from "@/assets/home/brands/girls4.jpg";
 
 
 
-export {logo, banner1, banner2, bannermob,bannermob2, vibe1,vibe2,vibe3,offer,man1,man2,man3,wom1,wom2,wom3,boy1,shape1,shape2, shape3,shape4,boy2, boys1, boys2,boys3,boys4,mens1,mens2,mens3,mens4,girls1,girls2,girls3,girls4};
+export {logo, banner1, banner2, bannermob,bannermob2, vibe1,vibe2,vibe3,offer,man1,man2,man3,wom1,wom2,wom3,boy1,shape1,shape2, shape3,shape4,shape5, boy2, boys1, boys2,boys3,boys4,mens1,mens2,mens3,mens4,girls1,girls2,girls3,girls4};
