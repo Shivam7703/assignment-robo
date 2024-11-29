@@ -90,7 +90,7 @@ function HomeBannerCard({
         alt="banner image"
         layout="fill"
       />
-      <div className="absolute z-10 h-full w-full bg-gradient-to-b from-transparent via-[#0000004e] to-[#202020c1]"></div>
+      <div className="absolute z-10 h-full w-full bg-gradient-to-b from-[#00000022] via-[#00000085] to-[#2020207a]"></div>
 
       <div className="relative z-10 grid grid-cols-2 max-md:pb-10 md:grid-cols-3 h-full  gap-y-10   lg:p-28 sm:p-12 px-7 pt-16 pb-11">
         <motion.div

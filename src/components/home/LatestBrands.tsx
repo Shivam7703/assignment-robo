@@ -6,7 +6,7 @@ import {
   boys1, boys2, boys3, boys4, 
   mens1, mens2, mens3, mens4, 
   girls1, girls2, girls3, girls4, 
-  shape2 
+  shape2 ,side
 } from "@/assets";
 
 // Import Swiper styles
@@ -29,6 +29,7 @@ export default function LatestBrands() {
           shadowOffset: 20,
           shadowScale: 0.94,
         },
+        speed:1000,
         loop: true,
         autoplay: {
           delay: 3000,
@@ -98,14 +99,29 @@ export default function LatestBrands() {
       </div>
 
       {/* boy */}
-      <div className='flex flex-wrap justify-between max-sm:flex-wrap-reverse gap-y-8 bg-orange-800 items-center md:px-24 md:py-14 px-7 py-10 md:mb-14 mb-9'>
+      <div className='flex flex-wrap justify-between relative max-sm:flex-wrap-reverse gap-y-8 overflow-hidden bg-orange-800 items-center md:px-24 md:py-16 px-7 py-10 md:mb-14 mb-9'>
+     
             <div className='sm:w-[49%] w-full  space-y-7 text-white'>
             <h3 className='font1 md:text-6xl text-3xl font-semibold'>Let's Take A Look Some Boy's Collection</h3>
             <p className='text-zinc-100'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum dolorem deleniti nostrum qui delectus voluptatem repudiandae sed, illum at voluptatum iusto accusamus neque ullam, quas vitae, maiores ad reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero pariatur eligendi consectetur rem provident dolor, qui libero maiores, ut nulla mollitia earum beatae laborum et, temporibus quaerat omnis itaque.</p>
             <div className='px-8 py-3 text-sm font-bold border-white border shadow-md bg-orange-800 cursor-pointer text-white hover:text-black hover:bg-white duration-300 w-max'>View Collection</div> 
         </div>
 
-        <div className='sm:w-[49%] w-full max-w-[550px] px-5'>
+        <div className='sm:w-[49%] w-full max-w-[500px] px-5 relative'>
+        <Image
+                  src={side}
+                  alt="icon"
+                  width={500}
+                  height={500}
+                  className="absolute -top-8 -right-3 opacity-40  w-[30vw] max-w-44 "
+                />
+                 <Image
+                  src={side}
+                  alt="icon"
+                  width={500}
+                  height={500}
+                  className="absolute -bottom-8 -left-3 rotate-180 opacity-40 w-[30vw] max-w-44 max-sm:hidden "
+                />
           <Swiper
             {...SWIPER_CONFIG} 
             className="mySwiper"

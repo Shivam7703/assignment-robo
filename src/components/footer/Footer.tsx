@@ -4,31 +4,35 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { TiSocialYoutubeCircular } from "react-icons/ti";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
-import { logo } from "@/assets";
+import {  logo3, border} from "@/assets";
 
 import { footer } from "@/data/wrapperData";
 
 export default function Footer() {
   return (
-    <div
-      className="pt-5 bg-blue-900 md:px-16 w-full  text-white md:pt-12"
-    >
+    <footer
+      className="pt-5 bg-orange-800 md:px-16 p-7 w-full  text-white md:pt-9 relative" >
+        
       {/* NewsLetter Section  */}
-      <div className="mb-5 flex w-full justify-between gap-3 border-b border-white max-sm:flex-wrap md:pb-8">
+      <div className=" flex w-full justify-between gap-3 border-b-2 border-white max-sm:flex-wrap pb-5">
         <Image
-          src={logo}
+          src={logo3}
           alt="logo"
           className="h-16 max-h-16 w-min object-contain md:h-20"
         />
-        <p className="mb-4 max-w-[400px] text-wrap max-sm:mt-3 max-sm:!w-[80vw]">
+        <p className="mb-4 max-w-2xl text-wrap max-sm:mt-3 max-sm:!w-full ">
        {footer?.text} 
         </p>
       </div>
+      <div className="max-w-80 w-full bg-orange-800 mx-auto sticky -mt-4 mb-5">  <Image
+          src={border}
+          alt="border"
+          className="w-full"
+        /></div>
       {/* Footer links section  */}
-      <div className="grid grid-cols-1 pb-5 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+      <div className="grid  pb-5 grid-cols-2 md:grid-cols-4 gap-y-2 lg:grid-cols-5">
         <div className="col-span-1 flex flex-col gap-y-2">
           <h4 className="my-2 text-xl font-semibold">{footer?.list1?.title}</h4>
           <ul>
@@ -36,7 +40,7 @@ export default function Footer() {
               <li key={i}>
                 <Link
                   href={d?.href}
-                  className="hover:pl-2 hover:font-medium hover:text-zinc-900"
+                  className="hover:pl-1 hover:font-medium hover:text-orange-300 duration-200"
                 >
                   {d?.label}
                 </Link>
@@ -51,7 +55,7 @@ export default function Footer() {
               <li key={i}>
                 <Link
                   href={d?.href}
-                  className="hover:pl-2 hover:font-medium hover:text-zinc-900"
+                  className="hover:pl-1 hover:font-medium hover:text-orange-300 duration-200"
                 >
                   {d?.label}
                 </Link>
@@ -66,7 +70,7 @@ export default function Footer() {
               <li key={i}>
                 <Link
                   href={d?.href}
-                  className="hover:pl-2 hover:font-medium hover:text-zinc-900"
+                  className="hover:pl-1 hover:font-medium hover:text-orange-300 duration-200"
                 >
                   {d?.label}
                 </Link>
@@ -81,7 +85,7 @@ export default function Footer() {
               <li key={i}>
                 <Link
                   href={d?.href}
-                  className="hover:pl-2 hover:font-medium hover:text-zinc-900"
+                  className="hover:pl-1 hover:font-medium hover:text-orange-300 duration-200"
                 >
                   {d?.label}
                 </Link>
@@ -101,10 +105,10 @@ export default function Footer() {
               name="email"
               id="email"
               placeholder="Enter your Email"
-              className="w-full rounded-full border-none py-4 pl-5 text-sm outline-none"
+              className="w-full rounded-full border-none py-2 px-6 text-black text-sm outline-none"
             />
             <button
-              className="!rounded-full !px-8"
+              className="rounded-lg !px-8 py-2 bg-black text-sm hover:bg-white hover:text-black duration-200"
               type="submit"
             >
               Subscribe
@@ -117,7 +121,7 @@ export default function Footer() {
         <p className="text-center text-sm">{footer?.copyrightText}</p>
         {/* Socials  */}
         {footer?.socials && (
-          <div className="flex-center gap-x-2 text-3xl text-white">
+          <div className="flex-center gap-x-2 max-md:mt-3 flex text-3xl text-white">
             {footer?.socials?.facebook && (
               <FaFacebook
                 className="social-icon text-xl"
@@ -153,6 +157,7 @@ export default function Footer() {
           </div>
         )}
       </div>
-    </div>
+      <div className="w-full h-4 "></div>
+    </footer>
   );
 }

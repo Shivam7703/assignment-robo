@@ -49,21 +49,21 @@ export const header = {
   ],
 };
 export const footer = {
-  text: "Talent Kaksha – Your go-to platform for expert-led courses and hands-on learning.",
+  text: "Siyaraam – The customer service at Samyak is also exceptional. Their team is knowledgeable, responsive, and always willing to assist with.",
   contactDetails: {
-    contactNo: "+1 (999) 888-77-66",
-    email: "info@TalentKaksha.com",
+    contactNo: "+1 12345678988",
+    email: "info@siyaaram.com",
     location:
       "#1701, B Tower, World \\nTrade Tower, Sector - 16, \\nNoida, U.P - 201301",
   },
   socials: {
-    facebook: "https://www.facebook.com/TalentKaksha",
-    twitter: "https://twitter.com/TalentKaksha",
-    instagram: "https://www.instagram.com/TalentKaksha/",
-    linkedin: "https://www.linkedin.com/school/TalentKaksha/",
-    youtube: "https://www.youtube.com/c/TalentKaksha",
+    facebook: "https://www.facebook.com/siyaaram",
+    twitter: "https://twitter.com/siyaaram",
+    instagram: "https://www.instagram.com/siyaaram/",
+    linkedin: "https://www.linkedin.com/school/siyaaram/",
+    youtube: "https://www.youtube.com/c/siyaaram",
   },
-  copyrightText: "Copyrights © 2024 TalentKaksha. All rights reserved.",
+  copyrightText: "Copyrights © 2024 siyaaram. All rights reserved.",
   list1: {
     title: "Products",
     links: [

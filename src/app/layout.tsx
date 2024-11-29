@@ -2,7 +2,7 @@ import { Dancing_Script, Playfair_Display, Montserrat_Alternates } from "next/fo
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header/Header";
-// import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer/Footer";
 
 const cursive = Dancing_Script({
   weight: ["400"], // Adjust weights if needed
@@ -43,7 +43,7 @@ export default function RootLayout({
       <body className={`${cursive.variable} ${font1.variable} ${font2.variable} bg-white `}>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
