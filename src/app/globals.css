@@ -27,7 +27,10 @@ body {
   background: var(--background);
   font-family: "Mulish", sans-serif;
 }
-
+p , li, .font2{
+  font-family: var(--font2);
+  font-optical-sizing: auto;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -52,6 +55,7 @@ h1 span, h2{
   font-family: var(--font1);
   font-optical-sizing: auto;
 }
+
 
 .swiper-pagination-bullet {
   height: 11px!important; width: 11px!important;

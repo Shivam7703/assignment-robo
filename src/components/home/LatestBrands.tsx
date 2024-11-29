@@ -16,7 +16,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
 // Import required modules
-import { EffectCube, Pagination, Autoplay } from 'swiper/modules';
+import { EffectCube,  Autoplay } from 'swiper/modules';
 
 export default function LatestBrands() {
 
@@ -60,7 +60,7 @@ export default function LatestBrands() {
 
   return (
     <section className='py-14 bg-white relative'>
-      <h2 className="md:text-6xl font-medium text-4xl text-center text-black">
+      <h2 className="md:text-6xl font-medium text-3xl text-center text-black">
         Our Top Brands
       </h2>
       <Image
@@ -92,8 +92,8 @@ export default function LatestBrands() {
         </div>
         <div className='sm:w-[49%] w-full  space-y-7 text-black'>
             <h3 className='font1 md:text-6xl text-3xl font-semibold'>Let's Take A Look Some Groom's Outfit</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum dolorem deleniti nostrum qui delectus voluptatem repudiandae sed, illum at voluptatum iusto accusamus neque ullam, quas vitae, maiores ad reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero pariatur eligendi consectetur rem provident dolor, qui libero maiores, ut nulla mollitia earum beatae laborum et, temporibus quaerat omnis itaque.</p>
-            <div className='px-8 py-3 md:text-xl text-sm font-bold border-black border shadow-md bg-white cursor-pointer text-black hover:text-white hover:bg-black duration-300 w-max'>View Collection</div> 
+            <p className='text-zinc-800'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum dolorem deleniti nostrum qui delectus voluptatem repudiandae sed, illum at voluptatum iusto accusamus neque ullam, quas vitae, maiores ad reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero pariatur eligendi consectetur rem provident dolor, qui libero maiores, ut nulla mollitia earum beatae laborum et, temporibus quaerat omnis itaque.</p>
+            <div className='px-8 py-3  text-sm font-bold border-black border shadow-md bg-white cursor-pointer text-black hover:text-white hover:bg-black duration-300 w-max'>View Collection</div> 
         </div>
       </div>
 
@@ -101,8 +101,8 @@ export default function LatestBrands() {
       <div className='flex flex-wrap justify-between max-sm:flex-wrap-reverse gap-y-8 bg-orange-800 items-center md:px-24 md:py-14 px-7 py-10 md:mb-14 mb-9'>
             <div className='sm:w-[49%] w-full  space-y-7 text-white'>
             <h3 className='font1 md:text-6xl text-3xl font-semibold'>Let's Take A Look Some Boy's Collection</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum dolorem deleniti nostrum qui delectus voluptatem repudiandae sed, illum at voluptatum iusto accusamus neque ullam, quas vitae, maiores ad reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero pariatur eligendi consectetur rem provident dolor, qui libero maiores, ut nulla mollitia earum beatae laborum et, temporibus quaerat omnis itaque.</p>
-            <div className='px-8 py-3 md:text-xl text-sm font-bold border-white border shadow-md bg-orange-800 cursor-pointer text-white hover:text-black hover:bg-white duration-300 w-max'>View Collection</div> 
+            <p className='text-zinc-100'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum dolorem deleniti nostrum qui delectus voluptatem repudiandae sed, illum at voluptatum iusto accusamus neque ullam, quas vitae, maiores ad reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero pariatur eligendi consectetur rem provident dolor, qui libero maiores, ut nulla mollitia earum beatae laborum et, temporibus quaerat omnis itaque.</p>
+            <div className='px-8 py-3 text-sm font-bold border-white border shadow-md bg-orange-800 cursor-pointer text-white hover:text-black hover:bg-white duration-300 w-max'>View Collection</div> 
         </div>
 
         <div className='sm:w-[49%] w-full max-w-[550px] px-5'>
@@ -148,8 +148,8 @@ export default function LatestBrands() {
         </div>
         <div className='sm:w-[49%] w-full  space-y-7 text-black z-10 '>
             <h3 className='font1 md:text-6xl text-3xl font-semibold'>Let's Take A Look Some Bride's Lahanga</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum dolorem deleniti nostrum qui delectus voluptatem repudiandae sed, illum at voluptatum iusto accusamus neque ullam, quas vitae, maiores ad reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero pariatur eligendi consectetur rem provident dolor, qui libero maiores, ut nulla mollitia earum beatae laborum et, temporibus quaerat omnis itaque.</p>
-            <div className='px-8 py-3 md:text-xl text-sm font-bold border-black border shadow-md bg-white cursor-pointer text-black hover:text-white hover:bg-black duration-300 w-max'>View Collection</div> 
+            <p className='text-zinc-800'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum dolorem deleniti nostrum qui delectus voluptatem repudiandae sed, illum at voluptatum iusto accusamus neque ullam, quas vitae, maiores ad reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero pariatur eligendi consectetur rem provident dolor, qui libero maiores, ut nulla mollitia earum beatae laborum et, temporibus quaerat omnis itaque.</p>
+            <div className='px-8 py-3  text-sm font-bold border-black border shadow-md bg-white cursor-pointer text-black hover:text-white hover:bg-black duration-300 w-max'>View Collection</div> 
         </div>
       </div>
     </section>

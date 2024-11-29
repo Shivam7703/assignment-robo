@@ -101,7 +101,7 @@ function HomeBannerCard({
           transition={{ duration: 0.8, delay: 0.5 }}
           className="col-span-2 flex h-full w-full flex-col max-w-3xl  justify-center gap-7 md:px-11 max-md:items-center"
         >
-          <h1 className="inline-block  text-4xl font-semibold md:text-6xl max-md:text-center">
+          <h1 className="inline-block  text-4xl font-medium md:text-6xl font1 max-md:text-center">
             {title} <span className="text-orange-500 banner-text">{title2}</span>
           </h1>
           <p className="md:text-lg text-md max-md:text-center">{subtitle}</p>
@@ -141,7 +141,7 @@ const sliderContent = [
     title: "Celebrate in Style!",
     title2:"Trending Now",
     subtitle:
-      "Shop now and upgrade your wardrobe with our exclusive collection of stylish apparel Shop now and upgrade your wardrobe with our exclusive collection of stylish apparel",
+      "Shop now and upgrade your wardrobe with our exclusive op now and upgrade your wardrobe with our exclusive collection of stylish apparel",
     btntext: "Explore More",
     href: "/",
   },
@@ -153,7 +153,7 @@ const sliderContent = [
     title: "Trendy Clothes, Just buy!",
     title2:"Trending Now",
     subtitle:
-      "Shop now and upgrade your wardrobe with our exclusive collection of stylish apparelShop now and upgrade your wardrobe with our exclusive collection of stylish apparel",
+      "Shop now and upgrade your wardrotion of stylish apparelShop now and upgrade your wardrobe with our exclusive collection of stylish apparel",
       btntext: "Shop Now",
     href: "/",
   },
@@ -165,7 +165,7 @@ const sliderContent = [
     title: "Celebrate in Style!",
     title2:"Trending Now",
     subtitle:
-      "Shop now and upgrade your wardrobe with our exclusive collection of stylish apparelShop now and upgrade your wardrobe with our exclusive collection of stylish apparel",
+      "Shop now and upgrade your wardrobe with our exclusive collection of stylish apparelShop now and upgrade your ",
     btntext: "Explore More",
     href: "/",
   },

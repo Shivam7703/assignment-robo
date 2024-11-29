@@ -1,4 +1,4 @@
-import { Dancing_Script, Playfair_Display } from "next/font/google"; // Ensure you import the font properly
+import { Dancing_Script, Playfair_Display, Montserrat_Alternates } from "next/font/google"; // Ensure you import the font properly
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header/Header";
@@ -9,6 +9,14 @@ const cursive = Dancing_Script({
   style: ["normal"],
   subsets: ["latin"],
   variable: "--cursive", // Ensure this matches your CSS variable naming convention
+  display: "swap",
+});
+
+const font2 = Montserrat_Alternates({
+  weight: ["300","400", "500", "600", "700", "800", "900"], // Adjust weights if needed
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--font2", // Ensure this matches your CSS variable naming convention
   display: "swap",
 });
 
@@ -32,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cursive.variable} ${font1.variable} bg-white `}>
+      <body className={`${cursive.variable} ${font1.variable} ${font2.variable} bg-white `}>
         <Header />
         {children}
         {/* <Footer /> */}

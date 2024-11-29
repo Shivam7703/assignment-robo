@@ -2,7 +2,7 @@ import logo from "@/assets/logo.png";
 // home
 import banner1 from "@/assets/home/banner/pc-1.avif";
 import banner2 from "@/assets/home/banner/pc-2.avif";
-import bannermob from "@/assets/home/banner/mob-1.avif";
+import bannermob from "@/assets/home/banner/mob-1.jpg";
 import bannermob2 from "@/assets/home/banner/mob-2.png";
 
 import vibe1 from "@/assets/home/vibe/vibe1.avif";

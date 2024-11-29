@@ -20,7 +20,6 @@ export default function Testimonial() {
     spaceBetween: 10,
 
     breakpoints: {
-     
       // When window width is >= 768px
       668: {
         slidesPerView: 2,
@@ -77,15 +76,15 @@ export default function Testimonial() {
   ];
 
   return (
-    <section className=" md:p-24 py-14  relative ">
-         <Image 
-              src={shape5} 
-              alt={"icon"} 
-              width={500} 
-              height={500} 
-              className="absolute -top-36 right-0 max-w-96 sm:opacity-60 opacity-40  w-[40vw] -z-0"
-            />
-      <h2 className="md:text-6xl font-medium text-4xl text-center relative z-10 text-black">
+    <section className=" md:px-24 md:py-20 py-6  relative ">
+      <Image
+        src={shape5}
+        alt={"icon"}
+        width={500}
+        height={500}
+        className="absolute -top-36 right-0 max-w-96 sm:opacity-60 opacity-40  w-[40vw] -z-0"
+      />
+      <h2 className="md:text-6xl font-medium text-3xl text-center relative z-10 text-black">
         Our Clients Review
       </h2>
       <Image
@@ -96,37 +95,44 @@ export default function Testimonial() {
         className="mx-auto max-w-72 w-full md:mb-12 z-10 mb-3"
       />
       <div className="max-sm:px-11">
-
-      <Swiper {...swiperOptions} className="mySwiper py-4">
-        {Client.map((card: any) => (
-          <SwiperSlide key={card.id}>
-            <div className="w-full flex flex-wrap justify-between p-9 gap-4 bg-orange-100 rounded-xl">
+        <Swiper {...swiperOptions} className="mySwiper py-4">
+          {Client.map((card: any) => (
+            <SwiperSlide key={card.id}>
+              <div className="w-full flex flex-wrap justify-between p-9 gap-4 bg-orange-100 rounded-xl">
                 <div className="flex items-center gap-2 md:gap-5">
-                    <Image src={card.img} alt="client" className="rounded-full object-cover w-14 h-14"/>
-                    <h3 className="font-semibold md:text-xl text-lg text-black ">{card.clname}</h3>
+                  <Image
+                    src={card.img}
+                    alt="client"
+                    className="rounded-full object-cover w-14 h-14"
+                  />
+                  <h3 className="font-semibold md:text-xl text-lg text-black ">
+                    {card.clname}
+                  </h3>
                 </div>
-                <div className="flex w-full justify-center gap-3 text-yellow-500 text-2xl"><FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
+                <div className="flex w-full justify-center gap-3 text-yellow-500 text-2xl">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
                 </div>
 
-                <p className="w-full md:text-lg font1 text-black">{card.text}</p>
-            
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+                <p className="w-full md:text-lg font1 text-black">
+                  {card.text}
+                </p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       {/* Navigation buttons */}
       <div
-        className={`${uniqueId}-next swiper-button-next !right-2 !p-2.5 !text-lg !text-orange-600 md:!right-3 !top-[64%] md:!h-16 md:!w-16 `}
+        className={`${uniqueId}-next swiper-button-next max-sm:after:!text-xl !right-2 !p-2.5 !text-orange-600 md:!right-3 !top-[64%] `}
       >
         {/* <GrNext /> */}
       </div>
       <div
-        className={`${uniqueId}-prev swiper-button-prev !left-2  !p-2.5  !text-orange-600 md:!left-3 !top-[64%] md:!h-16 md:!w-16 `}
+        className={`${uniqueId}-prev swiper-button-prev max-sm:after:!text-xl !left-2  !p-2.5  !text-orange-600 md:!left-3 !top-[64%] `}
       >
         {/* <GrPrevious /> */}
       </div>
